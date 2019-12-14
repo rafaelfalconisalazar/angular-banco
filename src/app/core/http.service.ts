@@ -10,7 +10,7 @@ import { Error } from './error.model';
 
 @Injectable()
 export class HttpService {
-  static API_END_POINT = 'http://127.0.0.1:8000/api/v1/';
+  static API_END_POINT = 'http://appssoluciones.com/reservas-demo/web/api/v1/';
   static UNAUTHORIZED = 401;
   static NOT_FOUND = 404;
 
