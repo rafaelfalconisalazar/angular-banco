@@ -49,7 +49,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {HomeComponent} from './home/home.component';
 import {ImageService} from "./home/image.service";
-import { ReservasComponent } from './reservas/reservas.component';
+import {ReservasComponent} from './reservas/reservas.component';
+import {BookingService} from "./reservas/booking.service";
 
 @NgModule({
   declarations: [
@@ -108,7 +109,10 @@ import { ReservasComponent } from './reservas/reservas.component';
     PortalModule,
     ScrollingModule
   ],
-  providers: [ImageService],
+  providers: [
+    ImageService,
+    BookingService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
